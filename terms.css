@@ -1,0 +1,82 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.header {
+    background-color: #222;
+    color: white;
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcd00;
+}
+
+/* Privacy Page Styles */
+.privacy-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.privacy-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.privacy-page p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.privacy-page ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}

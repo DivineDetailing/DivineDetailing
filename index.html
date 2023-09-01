@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divine Detailing</title>
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Divine Detailing</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="policies.html">Policies</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero fade-in">
+        <h1>Welcome to Divine Detailing</h1>
+        <p>Revive Your Ride.</p>
+        <a href="book.html" class="btn">Book Now</a>
+    </section>  
+
+    <footer class="footer">
+    </footer>
+
+    <section class="services fade-in">
+
+        <h2>Our Services</h2>
+
+        <ul>
+
+            <div class="service">
+                <h2>Exterior</h2>
+                <p>View our Exterior options</p>
+                <a href="exterior.cleans.html" class="btnn">Learn More</a>
+            </div>
+    
+            <div class="service">
+                <h2>Interior</h2>
+                <p>View our Interior options</p>
+                <a href="interior.cleans.html" class="btnn">Learn More</a>
+            </div>
+
+            <div class="service">
+                <h2>Exterior & Interior</h2>
+                <p>View our Exterior & Interior options</p>
+                <a href="both.html" class="btnn">Learn More</a>
+            </div>
+
+        </ul>
+
+    </section>
+
+    <footer class="footer">
+    </footer>
+
+    <section class="gallery fade-in">
+        <h2>Gallery</h2>
+        <div class="image-container">
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+            <img src="image4.jpg" alt="Image 4">
+        </div>
+    </section>
+
+    <footer class="footer">
+    </footer>
+
+    <section class="contact fade-in">
+        <h2>Contact Us</h2>
+        <p>Email: Divinedetailling@hotmail.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Divine Detailing</p>
+    </footer>
+
+    <script>
+        // JavaScript animation code
+        const elements = document.querySelectorAll('.fade-in');
+
+        const isInViewport = (element) => {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        };
+
+        const animateElements = () => {
+            elements.forEach(element => {
+                if (isInViewport(element)) {
+                    element.classList.add('visible');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', animateElements);
+    </script>
+
+</body>
+
+</html>
